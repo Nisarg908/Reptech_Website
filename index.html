@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Two Fixed Navbars</title>
+  <link rel="icon" type="image/x-icon" href="./imgs/favicon.ico">
+
+  <!-- Bootstrap 5.3.0 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <!-- Primary Navbar -->
+        <nav class="navbar-primary">
+            <!-- <div class="container"> -->
+                <p>The right turns towards your benefits.</p>
+            <!-- </div> -->
+        </nav>
+
+        <!-- Secondary Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-secondary no_padding">
+            <div class="container">
+            <!-- Add your secondary navbar content here -->
+            <a class="navbar-brand" href="#"><img src="./imgs/reptech_logo.jpg" alt=""></a>
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPrimary" aria-controls="navbarPrimary" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="purple">
+                        <path d="M2 17h20v2H2zM2 11h20v2H2zM2 5h20v2H2z"/>
+                    </svg>
+                </span>
+            </button> -->
+            <button class="custon-navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPrimary" aria-controls="navbarPrimary" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="custon-navbar-toggler-icon">
+                    <svg width="60px" height="60px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                        
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                        
+                        <g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M3.46447 20.5355C4.92893 22 7.28595 22 12 22C16.714 22 19.0711 22 20.5355 20.5355C22 19.0711 22 16.714 22 12C22 7.28595 22 4.92893 20.5355 3.46447C19.0711 2 16.714 2 12 2C7.28595 2 4.92893 2 3.46447 3.46447C2 4.92893 2 7.28595 2 12C2 16.714 2 19.0711 3.46447 20.5355ZM18.75 16C18.75 16.4142 18.4142 16.75 18 16.75H6C5.58579 16.75 5.25 16.4142 5.25 16C5.25 15.5858 5.58579 15.25 6 15.25H18C18.4142 15.25 18.75 15.5858 18.75 16ZM18 12.75C18.4142 12.75 18.75 12.4142 18.75 12C18.75 11.5858 18.4142 11.25 18 11.25H6C5.58579 11.25 5.25 11.5858 5.25 12C5.25 12.4142 5.58579 12.75 6 12.75H18ZM18.75 8C18.75 8.41421 18.4142 8.75 18 8.75H6C5.58579 8.75 5.25 8.41421 5.25 8C5.25 7.58579 5.58579 7.25 6 7.25H18C18.4142 7.25 18.75 7.58579 18.75 8Z" fill="#422776"/> </g>
+                        
+                        </svg>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarPrimary">
+                <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="container hero-text-box trapezium">
+            <h1><span class="blue_color">Reputed Micro System </span><br>Welcome to our website</h1>
+            <a class="btn btn-full" href="#products">Products</a>
+            <a class="btn btn-ghost" href="#catalogs">Catalogs</a>
+        </div>
+        <!-- <div class="main-content container">
+            <h1>Reptech Micro System <br>Welcome to our website</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu diam in arcu elementum convallis. Integer euismod, tellus a pulvinar venenatis, ex lorem aliquam ligula, quis luctus neque elit ac justo.</p>
+            Add your main website content here
+        </div> -->
+    </header>
+    <section class="section_services" id="services">
+        <div class="container services_container">
+            <h2>Services We Offer</h2>
+            <!-- <div class="row"> -->
+                <!-- <img class="col-2" src="/imgs/accessories.jpg" alt=""> -->
+                <p class="intro">
+                    "Excellence in quality, cost-effectiveness, strong customer care, 
+                    and enduring relationships are our following strengths and competitive advantages."
+                </p>
+                <!-- <img class="col-2" src="/imgs/accessories_2.jpg" alt=""> -->
+            <!-- </div> -->
+        </div>
+        <div class="section_showcase">
+          <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel" data-bs-theme="light">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./imgs/models_descrip_4.jpg" alt="">
+                <!-- <div class="container">
+                  <div class="carousel-caption text-end">
+                    <h1>One more for good measure.</h1>
+                    <p>Some representative placeholder content for the third slide of this carousel.</p>
+                    <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                  </div>
+                </div> -->
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/models_descrip_1.jpg" alt="">
+                <!-- <div class="container">
+                  <div class="carousel-caption text-start">
+                    <h1>Example headline.</h1>
+                    <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
+                    <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+                  </div>
+                </div> -->
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/models_descrip_2.jpg" alt="">
+                <!-- <div class="container">
+                  <div class="carousel-caption">
+                    <h1>Another example headline.</h1>
+                    <p>Some representative placeholder content for the second slide of the carousel.</p>
+                    <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                  </div>
+                </div> -->
+              </div>
+              <div class="carousel-item">
+                <img src="./imgs/models_descrip_3.jpg" alt="">
+                <!-- <div class="container">
+                  <div class="carousel-caption text-end">
+                    <h1>One more for good measure.</h1>
+                    <p>Some representative placeholder content for the third slide of this carousel.</p>
+                    <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                  </div>
+                </div> -->
+              </div>
+              
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="first_grid">
+            <div class="container crane features">
+                    <h3>Specification Of Crane / Hanging Scale  &nbsp;🏗</h3>
+                    <ul>
+                        <li>Crane scale is supplied with chargeable battery backup working up to 12 hours.</li>
+                        <li>Crane scale is on bearing bases, to rotate scale up to 360 degrees. <br>And also helpful to protect the load cell to withstand hostile conditions.</li>
+                        <li>Bright and large LED display, with Tare and Zero controls.</li>
+                        <li>OPTIONAL – REMOTE CONTROL FOR TARING  AND ZEROING Crane SCALE.</li>
+                        <li>International quality load cell.</li>
+                        <li>Government approved crane hook </li>   
+                        <li><span style="color: #422776;">IN SPECIAL CASE OF MELTING PURPOSE</span><br>Crane scale is supplied with extension rod, and 500 square mm covering the display with 4 mm thick M.S. sheet to protect scale from overheat</li>
+<!-- ?    MULTY function: counting parts,% weighing, GSM reading [g/m2].
+?    Custom Built Hybrid Circuit for protection against moisture. -->
+                    </ul>
+            </div>
+            <div class="container custom features">
+                <h3>CUSTOMISED WEIGHING SCALE AND SYSTEMS  &nbsp;<img src="./imgs/create-outline.svg" alt=""></h3>
+                <p>TO SUIT TO YOUR SPECIAL REQUIREMENT,<br>WE CAN PROVIDE CUSTOMISED SCALE AND SYSTEMS AS PER YOUR PLANT, ENVIORMENT, REQUIREMENT, CAPACITY AND ACCURACY, SIZE, SPACE AND HEIGHT, USER FRIENDLY.</p>
+        </div>
+        <div class="container all features">
+            <div>
+                <h3>Features of Reptech Balances &nbsp;<img src="./imgs/scale-outline.svg" alt=""></h3>
+                <ul>
+                    <!-- <li>Based on Advanced Electro Magnetic Force Compensation Technology.</li>    
+                    <li>Automatic zero tracking. Standard bi-directional RS232C interface.</li>    
+                    <li>Stainless steel weighing pan.</li>
+                    <li>Multiple weighing units- Grams, carat, tolla,</li>
+                    <li>Poly function – counting parts, percentage weighing, GSM reading (gr. / m2 ), filling mode, accumulation of weights in memory.</li>    
+                    <li>Response time approx. 3 to 6 seconds.</li>    
+                    <li>Tactile keyboard making it dust & moisture resistance for long lasting and reliable operation.</li> 
+                    <li>State of the art microcomputer based design</li> 
+                    <li>automatic self calibration systems, note- reference booliance required</li>    
+                    <li>Standard bi-directional RS-232C interface port.</li>    
+                    <li>Port for external display.</li> -->
+                    <li>Based on Advanced Electro Magnetic Force Compensation Technology.</li>
+                    <li>State of the art microcomputer based design</li>     
+                    <li>Automatic zero tracking. Standard bi-directional RS232C interface.</li>    
+                    <li>Stainless steel weighing pan.</li>
+                    <li>Multiple weighing units- Grams, carat, tolla,</li>
+                    <li>Multy function – counting parts, percentage weighing, GSM reading [gr/m2],</li> 
+                    <li>Fill mode, accumulation of weights in memory.</li>   
+                    <li>Response time approx. 3 to 6 seconds.</li>    
+                    <li>Tactile keyboard making it dust & moisture resistance for long lasting and reliable operation.</li> 
+                    <li>Unique ADC with temperature compensation for high resolution.</li>
+                    <li>automatic self calibration systems, note- reference booliance required. <br>( i.e. 100 gr. / 200 gr. / 300 gr.)</li>    
+                    <li>Standard bi-directional RS-232C interface port</li>    
+                    <li>Port for external display.</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="section_about" id="about">
+      <div class="goals">
+        <h2>Organization's Goal</h2>
+      <p>Our main aim is to get the customer confidence and them satisfaction, because we value the customer intentions, views, idea.&nbsp;</p></span>
+      </div>
+      
+      <div class="container who_we_are">
+        <div class="row">
+          <div class="text-box col-md-4">
+            <h2>Who we are:</h2>
+          </div>
+          
+          <!-- <div class="col-md-4">
+            <img src="/imgs/about_us.png" alt="">
+          </div> -->
+          <!-- <div class="col-md-8"> -->
+            <div class="col-md-8"> 
+              <p>We are in manufacturing of Precision Laboratory Balances, and Weighing related systems since last 12 years. “ REPTECH “ has established itself among several large scale and small scale industries as well as various Government organizations, schools and colleges, Education organization and research and development departments.</p>
+              <p>The company has been growing not only in interest of it’s customer based but also in terms of better quality standards, enhanced services and consistency in terms of product quality and availability.Our main aim is to give a best quality products, total customer satisfaction by personalized attention, understanding and developing innovative technique for customer benefits.</p>
+              <p>Reputed Micro Balance is One of the most reputed and established electronics weighing scales, magnetic weighing balance, and weighing systems manufacturing unit, supplier and service providing to all our esteemed customers. We introduce “ REPTECH “ to you along with catalogue, company details and other informative details. We are expert in manufacturing of electronics weighing scale, specially in lab balance of high accuracy.specially in lab balance of high accuracy of class ( I ) , &amp; class ( II ).</p>
+              </div>
+            </div>
+        </div>
+        <div class="container accreditations">
+          <div class="row">
+            <div class="text-box-2 col-md-4">
+              <h2>Our Accreditations Include :</h2>
+            </div>
+            
+            <!-- <div class="col-md-4">
+              <img src="/imgs/about_us.png" alt="">
+            </div> -->
+            <!-- <div class="col-md-8"> -->
+              <div class="col-md-8"> 
+                <ul>
+                  <li>Registered in S.S.I. unit, C.S.P.O., I.S.O. 9001-2000 certified and also in department of Weights and Measure.</li>
+  <li>Special range of Laboratory Balance with complete specification as per the International Standard.</li>
+  <li>Manufacturing on E.M.F.C. latest technology for balance.</li>
+  <li>Ultra model Quality Control Department.</li>
+  <li>Total manufacturing is under checked and inspected by well qualified and experienced staff.</li>
+  <li>These accreditations and facilities exhibit high levels of quality, environment friendliness, customer services and consistency in terms of quality. Every year we innovate in more value additions to the quality of our products, services and further assurance to our commitments.</li>
+  <li>For your information “ REPTECH “ has a strong nation wide presence with over 150 stockiest in all major cities. The company has a marketing office, stock point, sales point and customer care at Ahmedabad.</li>
+  <li>We always try to provide best quality, services to our valuable customers. Thanking you and awaiting for your favor and bless &nbsp;us…....</li>
+  <li>We have Manpower- Excellent Professional in our fields. Company has skilled and experience manpower for each activity, they are guided and directed by our experienced and educated group of technician, engineer and marketing person to meet with the goal of total quality and customer care by providing INSTALLING, COMMISSING, SERVICEING, &amp; TRAINING OUR CUSTOMERS all the times.</li>
+  <li>We have installed more than 20000 electronics balances and we also supply the same to other electronic scale manufacturing company, who are not in position to make such type of high accuracy balances.</li>
+                </ul>
+                
+                </div>
+              </div>
+          </div>
+    </section>
+    <section class="section-form" id="signup" data-aos="fade-in" data-aos-duration="1000">
+      <div class="container">
+        <div class="row">
+          <h2>We're Happy to hear from you</h2>
+      </div>
+      <div class="row">
+          <form action="#" method="POST" class="contact-form">
+              <div class="row justify-content-center">
+                  <div class="col-md-5">
+                      <label for="name">Name</label>
+                  </div>
+                  <div class="col-md-5">
+                      <input type="text" name="name" id="name" placeholder="Your Name" required>
+                  </div>
+              </div>
+              <div class="row justify-content-center">
+                  <div class="col-md-5">
+                      <label for="email">E-mail</label>
+                  </div>
+                  <div class="col-md-5">
+                      <input type="email" name="email" id="email" placeholder="Your E-mail" required>
+                  </div>
+              </div>
+              <div class="row justify-content-center">
+                  <div class="col-md-5">
+                      <label for="find-us">How did you find us?</label>
+                  </div>
+                  <div class="col-md-5">
+                      <select name="find-us" id="find-us">
+                          <option value="friends">Friends</option>
+                          <option value="search">Search Engine</option>
+                          <option value="add">Advertisement</option>
+                          <option value="other">Other</option>
+                      </select>
+                  </div>
+              </div>
+              <div class="row justify-content-center">
+                  <div class="col-md-5">
+                      <label for="news">Newsletter?</label>
+                  </div>
+                  <div class="col-md-5">
+                      <input type="checkbox" name="news" id="news" checked>
+                  </div>
+              </div>
+              <div class="row justify-content-center">
+                  <div class="col-md-5">
+                      <label for="text1">Drop a line</label>
+                  </div>
+                  <div class="col-md-5">
+                      <textarea name="text1" id="text1" cols="30" rows="10"></textarea>
+                  </div>
+              </div>
+              <div class="row justify-content-center">
+                  <div class="col-md-5">
+                      <label>&nbsp;</label>
+                  </div>
+                  <div class="col-md-5">
+                      <input type="submit" value="Send-me">
+                  </div>
+              </div>
+          </form>
+      </div>
+      </div>
+  </section>
+  <footer>
+    <div class="row">
+      <div id="footer_logo">
+        <img src="./imgs/reptech_logo.jpg" alt="">
+      </div>
+    </div>
+      <div class="row">
+          <div class="col">
+              <ul class="footer-nav">
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Press</a></li>
+                  <li><a href="#">IOS App</a></li>
+                  <li><a href="#">Android App</a></li>
+              </ul>
+          </div>
+          <div class="col">
+              <ul class="social-links">
+                  <li><ion-icon class="fb" name="logo-facebook"></ion-icon></li>
+                  <li><ion-icon class="twitter" name="logo-twitter"></ion-icon></li>
+                  <li><ion-icon class="google" name="logo-google"></ion-icon></li>
+                  <li><ion-icon class="insta" name="logo-instagram"></ion-icon></li>
+              </ul>
+          </div>
+      </div>
+      <div class="row">
+          <p>Copyright &copy; 2009 by Reputed micro systems. All rights reserved.</p>
+      </div>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js" integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <!-- Bootstrap 5.3.0 JS (Make sure to include Popper.js and jQuery before this) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

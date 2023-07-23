@@ -354,7 +354,7 @@ h2:after {
         font-size: 20px;
         /* font-size: large; */
         padding: 3%;
-        overflow: hidden;
+        /* overflow: hidden; */
     }
     
     .section-form .row {
@@ -443,6 +443,9 @@ h2:after {
     }
     .insta:hover {
         color: magenta;
+    }
+    .section-form {
+        scroll-margin-top: 95px !important;
     }
 @media only screen and (max-width: 991.5px) {
     .custon-navbar-toggler {

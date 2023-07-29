@@ -1,4 +1,5 @@
 html {
+    box-sizing: border-box;
     scroll-behavior: smooth;
 }
 body {
@@ -60,17 +61,26 @@ body {
     padding: 8px 0;
     transition: border-bottom 0.40s;
 }
-
-.navbar-nav li a:hover,
-.navbar-nav li a:active {
-
+.custom-active {
+    color: #422790 !important;
+    font-weight: bolder;
     border-bottom: 2px solid #422776;
 }
+/* .navbar-nav li a.active  {
+    color: #422776;
+} */
+/* .navbar-nav li a:hover,
+.navbar-nav li a.active {
+    border-bottom: 2px solid #422776;
+} */
 
 /* .navbar-toggler-icon {
     filter: invert(100%);
     color: #422776 !important;
 } */
+.custon-navbar-toggler-icon img {
+    width: 50px;
+}
 .custon-navbar-toggler {
     display: none;
     border: none !important;
@@ -80,7 +90,7 @@ body {
 
 header {
     background-attachment: fixed;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./imgs/analyticalnew1.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('./imgs/analyticalnew1.jpg');
     height: 84.5vh;
     font-family: sans-serif !important;
     background-size: cover;
@@ -99,7 +109,8 @@ header {
     left: 0;
     /* transform: translate(0, -50%); */
     /* overflow: hidden; */
-    background-color: rgba(225, 225, 225, 0.6);
+    /* background-color: rgba(225, 225, 225, 0.8); */
+    background-color: rgba(0, 0, 0, 0.4);
     clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
 }
 /* .trapezium {
@@ -179,19 +190,6 @@ h2 {
     padding-right: 0 !important;
 }
 
-.fw-bold {
-    font-weight: 300 !important;
-}
-
-.py-5 {
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
-}
-
-.p-5 {
-    padding: 1rem !important;
-}
-
 h2:after {
     display: block;
     height: 2px;
@@ -230,6 +228,8 @@ h2:after {
     font-size: 78%;
 }
 .first_grid {
+    margin-top: 40px;
+    margin-bottom: 20px;
     overflow: hidden;
     border: 2px solid #422776;
     background-color: #422776;
@@ -292,8 +292,11 @@ h2:after {
       border: none;
     }
 
-    #about {
+    .section_about {
         scroll-margin-top: 95px !important;
+    }
+    .class_about {
+        overflow-x: hidden;
     }
     .section_about p {
         font-size: 70% !important;
@@ -307,7 +310,8 @@ h2:after {
         color: white;
         /* background-attachment: fixed; */
         background-image: url('./whoweare.png');
-        /* font-family: sans-serif !important; */
+        /* font-f
+        background-: amily: sans-serif !important; */
         background-size: cover;
         background-position: center;
         overflow: hidden;
@@ -330,7 +334,8 @@ h2:after {
         color: white;
         /* background-attachment: fixed; */
         background-image: url('./accreditations.png');
-        /* font-family: sans-serif !important; */
+        /* font-f
+        background-: amily: sans-serif !important; */
         background-size: cover;
         background-position: center;
         overflow: hidden;
@@ -344,6 +349,7 @@ h2:after {
     clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
     }
     .text-box-2 h2 {
+        font-size: 170%;
         color: #422776;
     }
     .goals p {
@@ -351,6 +357,7 @@ h2:after {
         font-size: 100% !important;
     }
     .section-form {
+        scroll-margin-top: 95px !important;
         font-size: 20px;
         /* font-size: large; */
         padding: 3%;
@@ -392,10 +399,11 @@ h2:after {
     }
 
     #footer_logo img{
-        width: 150px;
+        width: 120px;
     }
-    
+
     .footer-nav {
+        padding-left: 0;  
         list-style: none;
         float: left;
     }
@@ -444,28 +452,133 @@ h2:after {
     .insta:hover {
         color: magenta;
     }
-    .section-form {
-        scroll-margin-top: 95px !important;
+    /* .section-form {
+        
+    } */
+
+    @media only screen and (min-width: 1398px) {
+        .who_we_are {
+            background-size: 1250px 440px;
+        }
+        .text-box {
+            padding-top: 6%;
+        }
+        .text-box-2 {
+            padding-top: 5%;
+        }
     }
-@media only screen and (max-width: 991.5px) {
+    @media only screen and (max-width: 1200px) {
+        .text-box {
+            height: 44.5vh;
+        }
+        .text-box-2 {
+            padding-left: 0;
+            transform: translate(0, 42%);
+            height: 40vh;
+        }
+        /* .text-box h2 {
+
+        } */
+        .text-box-2 h2 {
+            font-size: 150%;
+        }
+    }
+    @media only screen and (max-width: 1022px) {
+        .hero-text-box {
+            background-color: rgba(0, 0, 0, 0.4);
+            width: 70%;
+            /* clip-path: none; */
+        }
+    
+        .carousel-item img {
+            width: 100%;
+        }
+        .text-box {
+            padding-top: 12%;
+            height: 55vh;
+        }
+        .text-box-2 {
+            padding-top: 9%;
+            transform: translate(0, 32%);
+            height: 55vh;
+        }
+        .text-box h2{
+            font-size: 140%;
+        }
+        .text-box-2 h2{
+            font-size: 140%;
+        }
+    }
+    @media only screen and (max-width: 996.5px) {
+        .section_about .container {
+            max-width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        .accreditations {
+            background-size: 1000px;
+        }
+        .text-box-2 {
+            transform: translate(0, 39%);
+        }
+    }
+    @media only screen and (max-width: 991.5px) {
     .custon-navbar-toggler {
         display: block;
     }
+
+    .navbar-secondary,
     #navbarPrimary {
-        background-color: #422776;
+        background-color: rgba(225, 225, 225, 0.9);
+    } 
+      /* 2. Set width of .container to 100% */
+      .navbar-secondary .container {
+        padding-top: 0;
+        padding-bottom: 0;
+        margin: 0;
+        max-width: 100%;
+        width: 100%;
+        border: 2px solid #422776;
+      }
+    .navbar-nav {
+        width: 35%;
+        align-items: end;
+        /* background-color: #ffffff; */
     }
+    .navbar-nav li {
+        align-items: center;
+    }
+    .navbar-nav li a{
+        text-align: center;
+    }
+    .navbar-nav li a:link,
+    .navbar-nav li a:visited {
+        color: #422776;
+    }
+    /* .active {
+        border-bottom: none;
+    } */
+    /*
     .navbar-nav li a:hover,
     .navbar-nav li a:active {
-
-        border-bottom: 2px solid white;
-    }
+        border-bottom: 2px solid #98a0a8;
+    } */
+    
 }
+@media only screen and (max-width: 820px) {
+    
+}
+
+/* @media only screen and (max-width: 942px) {
+    
+} */
 @media only screen and (max-width: 768px) {
     h2 {
         font-size: 140%;
     }
     .hero-text-box {
-        width: 60%;
+        background-color: rgba(0, 0, 0, 0.4);
+        width: 100%;
         clip-path: none;
     }
     .who_we_are {
@@ -480,9 +593,11 @@ h2:after {
         clip-path: none;
     }
     .text-box-2 {
+        height: 71vh;
+        transform: translate(0, 42%);
         padding-left: 0;
         padding-right: 0;
-        padding-top: 29%;
+        padding-top: 20%;
         margin-bottom: 10%;
         clip-path: none;
     }
@@ -494,8 +609,15 @@ h2:after {
     }
 }
 @media only screen and (max-width: 480px) {
-    .hero-text-box {
-        width: 100%;
+    h1 {
+        height: 80%;
+    }
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+        display: none;
+    }
+    header {
+        height: 87vh;
+        background-position: 87% center;
     }
     .carousel-item img {
         margin-left: auto;
@@ -528,5 +650,28 @@ h2:after {
     }
     .accreditations {
         background-position: center;
+    }
+    .text-box {
+        padding-top: 5px;
+        height: 15vh;
+    }
+    .text-box-2 {
+        padding-top: 5px;
+        transform: translate(0, 5%);
+        height: 20vh;
+    }
+}
+@media only screen and (max-width: 280px) {
+    h1 {
+        height: 60%;
+        font-size: 200%;
+    }
+    .btn-full:link,
+    .btn-full:visited, 
+    input[type=submit] {
+        margin-right: 0px;
+    }
+    .hero-text-box {
+        height: 60vh;
     }
 }

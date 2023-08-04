@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Showcase</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.container {
+  max-width: 600px;
+}
+
+.product-showcase {
+  border: 4px solid #422776;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 1s ease-in-out;
+}
+
+.slides {
+  display: flex;
+  gap: 10px;
+}
+
+.slides img {
+  width: 100%;
+  max-width: 100px;
+  border-radius: 10px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.controls button {
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  background-color: #422776;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.controls button:focus {
+  outline: none;
+}
+
+.controls button:hover {
+  background-color: #6e5494;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="product-showcase">
+      <div class="slider">
+        <div class="slides">
+          <img src="./products/Analytical_Balance-removebg-preview.png" alt="Photo 1">
+<img src="./products/Laboratery_Balance-removebg-preview.png" alt="Photo 2">
+<img src="./products/Precision_Balance-removebg-preview.png" alt="Photo 3">
+<img src="./products/Top_Loading_Balance-removebg-preview.png" alt="Photo 4">
+<img src="./products/Platform_Scale-removebg-preview.png" alt="Photo 5">
+<img src="./products/crane_scale-removebg-preview.png" alt="Photo 6">
+<img src="./products/High_Resolution-removebg-preview.png" alt="Photo 7">
+<img src="./products/Table_Top_Scale-removebg-preview.png" alt="Photo 8">
+<img src="./products/weighbridge-removebg-preview.png" alt="Photo 9">
+<img src="./products/betchingsystem-removebg-preview.png" alt="Photo 10">
+<img src="./products/Moisture_Balance-removebg-preview.png" alt="Photo 11">
+<img src="./products/Jewellery_Scale-removebg-preview.png" alt="Photo 12">
+<img src="./products/Economy_Scale-removebg-preview.png" alt="Photo 13">
+<img src="./products/Chicken_Scale-removebg-preview.png" alt="Photo 14">
+<img src="./products/liquid-removebg-preview.png" alt="Photo 15">
+<img src="./products/Bench_Scale-removebg-preview.png" alt="Photo 16">
+          <!-- Add all 16 photos here -->
+        </div>
+      </div>
+      <div class="controls">
+        <button class="prev-btn">&lt;</button>
+        <button class="next-btn">&gt;</button>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+  const slideWidth = $('.slides img').first().width() + 10;
+  let currentIndex = 0;
+  
+  function slideLeft() {
+    currentIndex++;
+    if (currentIndex > $('.slides img').length - 4) {
+      currentIndex = 0;
+    }
+    updateSliderPosition();
+  }
+  
+  function slideRight() {
+    currentIndex--;
+    if (currentIndex < 0) {
+      currentIndex = $('.slides img').length - 4;
+    }
+    updateSliderPosition();
+  }
+  
+  function updateSliderPosition() {
+    const position = -currentIndex * slideWidth;
+    $('.slider').css('transform', `translateX(${position}px)`);
+  }
+  
+  $('.prev-btn').click(slideRight);
+  $('.next-btn').click(slideLeft);
+  
+  // Automatic sliding every 2 seconds
+  setInterval(slideLeft, 4000);
+});
+
+  </script>
+</body>
+</html>

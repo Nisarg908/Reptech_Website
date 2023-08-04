@@ -93,13 +93,14 @@ header {
     /* background-attachment: fixed; */
     /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./imgs/analyticalnew1.jpg'); */
     /* height: 84.5vh; */
-    font-family: sans-serif !important;
+    font-family: sans-serif;
     /* background-size: cover;
     background-position: center; */
     overflow: hidden;
 }
 
 .hero-text-box {
+    font-family: sans-serif;
     text-align: center;
     height: 40%;
     /* padding-left: 6%; */
@@ -157,9 +158,9 @@ h1 {
     font-size: 50px;
 }
 
-/* .blue_color {
+.blue_color {
     color: #4227aa;
-} */
+}
 
 .btn:link,
 .btn:visited,
@@ -249,6 +250,11 @@ h2:after {
     gap: 30px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.gi a {
+    margin: 0;
+    text-decoration: none;
 }
 
 .gi {
@@ -498,13 +504,13 @@ footer p {
         padding-left: 1.5%;
     }
     .hero-text-box {
-        top: 25%;
-        height: 30%;
+        top: 18%;
+        height: 19%;
         left: 10%;
         width: 80%;
     }
     .carousel-item img {
-        height: 50vh;
+        height: 30vh;
     }
     .btn:link,
     .btn:visited {
@@ -528,5 +534,129 @@ footer p {
     }
     .gi {
         width: 100%;
+    }
+}
+
+.analytical_balance h2{
+    margin-bottom: 0;
+    font-size: 140%;
+}
+.analytical_balance h2::after {
+    margin-top: 20px;
+}
+
+.analytical_balance > .container > .row img {
+    width: 70%;
+}
+.analytical_balance > .container > .row {
+    margin: 20px 0;
+}
+.analytical_balance > .container > .row p{
+    font-size: 90%;
+}
+.bold {
+    font-weight: bolder;
+}
+.analytical_balance table {
+    font-size: 90%;
+    border: 1px solid #422776;
+    text-align: center;
+    margin-left: 9.5%;
+    width: 80%;
+}
+.analytical_balance tbody tr:nth-child(odd) {
+    background-color: #DFDFDF;
+  }
+  
+.analytical_balance tbody tr:nth-child(even) {
+    background-color: none;
+  }
+  .analytical_balance .features p {
+    margin-top: 20px;
+    font-size: 150%;
+}
+.analytical_balance .features ul{
+    padding-left: 2rem;
+    list-style:circle;
+}
+
+@media only screen and (min-width: 1230px) {
+    .analytical_balance > .container > .row p{
+        font-size: 100%;
+    }
+    .analytical_balance table {
+        font-size: 100%;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .analytical_balance > .container > .row p{
+        padding-right: 30px;
+    }
+    .analytical_balance .container {
+        max-width: 100%;
+    }
+    .analytical_balance .photo {
+        text-align: center;
+    } 
+}
+@media only screen and (max-width: 1100px) {
+    .analytical_balance > .container > .row p,
+    .analytical_balance .features ul {
+        font-size: 83%;
+    }
+    .analytical_balance table {
+        font-size: 83%;
+    }
+    .analytical_balance > .container > .row img {
+        width: 80%;
+    }
+}
+@media only screen and (max-width:925px) {
+    .analytical_balance > .container > .row p {
+        padding-right: 0;
+        font-size: 75%;
+    }
+    .analytical_balance table,
+    .analytical_balance .features ul {
+        font-size: 75%;
+    }
+}
+@media only screen and (max-width:900px) {
+    .analytical_balance > .container > .row img {
+        width: 85%;
+    }
+}
+@media only screen and (max-width:767.5px) {
+    .analytical_balance > .container > .row p{
+        font-size: 90%;
+    }
+    .analytical_balance table,
+    .analytical_balance .features ul {
+        font-size: 90%;
+    }
+    .analytical_balance > .container > .row img {
+        width: 300px;
+    }
+    .analytical_balance .features p {
+        margin-bottom: 10px;
+        font-size: 120%;
+    }
+}
+@media only screen and (max-width:500px) {
+    .analytical_balance > .container > .row p,
+    .analytical_balance .features ul {
+        font-size: 85%;
+    }
+    .analytical_balance table {
+        width: 95%;
+        margin-left: 2.5%;
+        font-size: 80%;
+    }
+}
+@media only screen and (max-width:400px) {
+    .analytical_balance table {
+        width: 100%;
+        margin-left: 0%;
+        font-size: 75%;
     }
 }
